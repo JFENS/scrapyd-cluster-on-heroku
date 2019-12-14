@@ -28,7 +28,7 @@ if os.environ.get('ENABLE_AUTH', 'False') == 'True':
     ENABLE_AUTH = True
 # In order to enable basic auth, both USERNAME and PASSWORD should be non-empty strings.
 USERNAME = 'admin'
-PASSWORD = 'scrapydadmin'
+PASSWORD = 'scrapydweb'
 USERNAME = os.environ.get('USERNAME', 'admin')
 PASSWORD = os.environ.get('PASSWORD', 'scrapydweb')
 
@@ -55,7 +55,7 @@ PASSWORD = os.environ.get('PASSWORD', 'scrapydweb')
 SCRAPYD_SERVERS = [
     '127.0.0.1:6800',
     # 'username:password@localhost:6801#group',
-    ('username', 'password', 'localhost', '6801', 'group'),
+    ('admin', 'scrapydweb', 'localhost', '6801', 'group'),
 ]
 SCRAPYD_SERVERS = []
 import re
